@@ -8,7 +8,9 @@ class APApi
   end
 
   def reports
-    report_index['reports'].map { |report| get(report['id']) }
+    report_index['reports'].reduce({}) do |response, report|
+      response.merge( get(report['id']) )
+    end
   end
 
   def report_index

@@ -1,24 +1,17 @@
-# README
+# Delegate API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An API that returns delegate information
 
-Things you may want to cover:
+```
+GET <BASE_URL>/reports
+```
 
-* Ruby version
+__Returns:__
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```js
+{
+  delState: {}  // Information about delegates by state
+  delSum:   {}  // Information about delegate sums by nominee
+  delSuper: {}  // Information about counts with and without super-delegates by nominee
+}
+```
