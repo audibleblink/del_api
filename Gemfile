@@ -5,6 +5,7 @@ gem 'puma', '~> 3.0'
 gem 'httparty'
 gem 'dalli'
 gem 'connection_pool'
+gem 'rack-cors'
 
 group :development, :test do
   gem 'pry-byebug', platform: :mri
