@@ -1,9 +1,11 @@
 # Delegate API
 
-An API that returns delegate information
+An API that mirrors delegate information from the Associated Press API. Users must provide their own access key.
 
+
+### Endpoint
 ```
-GET <BASE_URL>/reports
+GET $BASE_URL/reports
 ```
 
 __Returns:__
